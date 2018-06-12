@@ -13,39 +13,54 @@ namespace Ultimo_Lab
 {
     public partial class Form2 : Form
     {
+        BaseDatos db = new BaseDatos();
+
         public Form2()
         {
-            InitializeComponent();
+            db.pelicula.Add(new Pelicula("asd", "asd", "asd", "asd", "asd", "asd"));
+            db.pelicula.Add(new Pelicula("asd", "asd", "asd", "asd", "asd", "asd"));
+            db.pelicula.Add(new Pelicula("asd", "asd", "asd", "asd", "asd", "asd"));
+            db.pelicula.Add(new Pelicula("asd","asd","asd","asd","asd","asd"));
 
+
+            InitializeComponent();
+            
+ 
         }
 
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void peliculasBtn_Click(object sender, EventArgs e)
         {
-            int n = 2;
-            TextBox[] textBoxes = new TextBox[n];
-            Label[] labels = new Label[n];
-
-            for (int i = 0; i < n; i++)
+            
+            for (int i = 0; i < this.db.pelicula.Count; i++)
             {
-                textBoxes[i] = new TextBox();
-                // Here you can modify the value of the textbox which is at textBoxes[i]
-
-                labels[i] = new Label();
-                // Here you can modify the value of the label which is at labels[i]
+                //Create label
+                Label label = new Label();
+                label.Text = String.Format("{0}", this.db.pelicula[i].Nombre);
+                //Position label on screen
+                label.Left = 10;
+                label.Top = (i + 1) * 20 + 130;
+                label.Click += Label_Click;
+                //Create textbox
+                //TextBox textBox = new TextBox();
+                //Position textbox on screen
+                //textBox.Left = 120;
+                //textBox.Top = (i + 1) * 20 + 130;
+                //Add controls to form
+                this.Controls.Add(label);
+                //this.Controls.Add(textBox);
             }
+        }
 
-            // This adds the controls to the form (you will need to specify thier co-ordinates etc. first)
-            for (int i = 0; i < n; i++)
-            {
-                this.Controls.Add(textBoxes[i]);
-                this.Controls.Add(labels[i]);
-            }
+        private void Label_Click(object sender, EventArgs e)
+        {
+            Form pelicula_perfil = new Form3();
+            pelicula_perfil.Show();
         }
 
         private void actoresBtn_Click(object sender, EventArgs e)
