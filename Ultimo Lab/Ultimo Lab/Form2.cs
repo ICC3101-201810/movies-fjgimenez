@@ -19,13 +19,20 @@ namespace Ultimo_Lab
         {
             db.pelicula.Add(new Pelicula("asd", "asd", "asd", "asd", "asd", "asd"));
             db.pelicula.Add(new Pelicula("asd", "asd", "asd", "asd", "asd", "asd"));
-            db.pelicula.Add(new Pelicula("asd", "asd", "asd", "asd", "asd", "asd"));
-            db.pelicula.Add(new Pelicula("asd","asd","asd","asd","asd","asd"));
 
+            db.actor.Add(new Actor("asd", "asd", "asd", "asd"));
+            db.actor.Add(new Actor("asd", "asd", "asd", "asd"));
+
+            db.director.Add(new Director("asd", "asd", "asd", "asd"));
+            db.director.Add(new Director("asd", "asd", "asd", "asd"));
+
+            db.productor.Add(new Productor("asd", "asd", "asd", "asd"));
+            db.productor.Add(new Productor("asd", "asd", "asd", "asd"));
+
+            db.estudio.Add(new Estudio("asd", "asd", "asd"));
+            db.estudio.Add(new Estudio("asd", "asd", "asd"));
 
             InitializeComponent();
-            
- 
         }
 
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
@@ -41,49 +48,94 @@ namespace Ultimo_Lab
             {
                 //Create label
                 Label label = new Label();
-                label.Text = String.Format("{0}-{1}", i,this.db.pelicula[i].Nombre);
+                label.Text = String.Format("{0}-{1}", i+1,this.db.pelicula[i].Nombre);
                 //Position label on screen
                 label.Left = 10;
                 label.Top = (i + 1) * 20 + 130;
                 label.Click += Label_Click_Pelicula;
-                //Create textbox
-                //TextBox textBox = new TextBox();
-                //Position textbox on screen
-                //textBox.Left = 120;
-                //textBox.Top = (i + 1) * 20 + 130;
-                //Add controls to form
                 this.Controls.Add(label);
-                //this.Controls.Add(textBox);
+              
             }
         }
 
         private void Label_Click_Pelicula(object sender, EventArgs e)
         {
             this.Refresh();
-            int pelicula_id =Int32.Parse(((Label)sender).Text.Split('-')[0]);
-            Form pelicula_perfil = new Form3(this.db.pelicula[pelicula_id]);
+            int pelicula_id =Int32.Parse(((Label)sender).Text.Split('-')[0])-1;
+            Form pelicula_perfil = new FormPelicula(this.db.pelicula[pelicula_id]);
             pelicula_perfil.Show();
 
         }
 
         private void actoresBtn_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < this.db.actor.Count; i++)
+            {
+                //Create label
+                Label label = new Label();
+                label.Text = String.Format("{0}-{1}", i+1, this.db.actor[i].Nombre);
+                //Position label on screen
+                label.Left = 10;
+                label.Top = (i + 1) * 20 + 130;
+                label.Click += Label_Click_Actores;
+                this.Controls.Add(label);
+            }
+        }
+        private void Label_Click_Actores(object sender, EventArgs e)
+        {
             this.Refresh();
+            int actores_id = Int32.Parse(((Label)sender).Text.Split('-')[0])-1;
+            Form actores_perfil = new FormPelicula(this.db.pelicula[actores_id]);
+            actores_perfil.Show();
+
         }
 
         private void directoresBtn_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < this.db.pelicula.Count; i++)
+            {
+                //Create label
+                Label label = new Label();
+                label.Text = String.Format("{0}-{1}", i, this.db.director[i].Nombre);
+                //Position label on screen
+                label.Left = 10;
+                label.Top = (i + 1) * 20 + 130;
+                label.Click += Label_Click_Pelicula;
+                this.Controls.Add(label);
 
+            }
         }
 
         private void productoresBtn_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < this.db.pelicula.Count; i++)
+            {
+                //Create label
+                Label label = new Label();
+                label.Text = String.Format("{0}-{1}", i, this.db.productor[i].Nombre);
+                //Position label on screen
+                label.Left = 10;
+                label.Top = (i + 1) * 20 + 130;
+                label.Click += Label_Click_Pelicula;
+                this.Controls.Add(label);
 
+            }
         }
 
         private void estudiosBtn_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < this.db.pelicula.Count; i++)
+            {
+                //Create label
+                Label label = new Label();
+                label.Text = String.Format("{0}-{1}", i, this.db.estudio[i].Nombre);
+                //Position label on screen
+                label.Left = 10;
+                label.Top = (i + 1) * 20 + 130;
+                label.Click += Label_Click_Pelicula;
+                this.Controls.Add(label);
 
+            }
         }
     }
     }

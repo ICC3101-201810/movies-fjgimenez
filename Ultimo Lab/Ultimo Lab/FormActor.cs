@@ -10,14 +10,18 @@ using System.Windows.Forms;
 
 namespace Ultimo_Lab
 {
-    public partial class Form3 : Form
+    public partial class FormActor : Form
     {
-
-        public Form3(Pelicula p)
+        public FormActor(Actor a)
         {
-            
             InitializeComponent();
-            label1.Text = p.Nombre;
+            labelNombre.Text = a.Nombre;
         }
+
+        private void FormActor_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
