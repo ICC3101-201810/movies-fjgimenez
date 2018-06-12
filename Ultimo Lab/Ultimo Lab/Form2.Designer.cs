@@ -116,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 247);
+            this.ClientSize = new System.Drawing.Size(519, 641);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.searchBar);
             this.Controls.Add(this.estudiosBtn);
