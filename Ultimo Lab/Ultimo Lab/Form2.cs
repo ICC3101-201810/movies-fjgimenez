@@ -41,11 +41,11 @@ namespace Ultimo_Lab
             {
                 //Create label
                 Label label = new Label();
-                label.Text = String.Format("{0}", this.db.pelicula[i].Nombre);
+                label.Text = String.Format("{0}-{1}", i,this.db.pelicula[i].Nombre);
                 //Position label on screen
                 label.Left = 10;
                 label.Top = (i + 1) * 20 + 130;
-                label.Click += Label_Click;
+                label.Click += Label_Click_Pelicula;
                 //Create textbox
                 //TextBox textBox = new TextBox();
                 //Position textbox on screen
@@ -57,15 +57,18 @@ namespace Ultimo_Lab
             }
         }
 
-        private void Label_Click(object sender, EventArgs e)
+        private void Label_Click_Pelicula(object sender, EventArgs e)
         {
-            Form pelicula_perfil = new Form3();
+            this.Refresh();
+            int pelicula_id =Int32.Parse(((Label)sender).Text.Split('-')[0]);
+            Form pelicula_perfil = new Form3(this.db.pelicula[pelicula_id]);
             pelicula_perfil.Show();
+
         }
 
         private void actoresBtn_Click(object sender, EventArgs e)
         {
-
+            this.Refresh();
         }
 
         private void directoresBtn_Click(object sender, EventArgs e)

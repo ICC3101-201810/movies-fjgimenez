@@ -12,9 +12,12 @@ namespace Ultimo_Lab
 {
     public partial class Form3 : Form
     {
-        public Form3()
+
+        public Form3(Pelicula p)
         {
+            
             InitializeComponent();
+            label1.Text = p.Nombre;
         }
     }
 }
