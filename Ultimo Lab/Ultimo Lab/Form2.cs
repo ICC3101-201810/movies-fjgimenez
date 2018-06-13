@@ -32,6 +32,10 @@ namespace Ultimo_Lab
             db.estudio.Add(new Estudio("Estudio1", "Direccion2", "Fecha1"));
             db.estudio.Add(new Estudio("Estudio2", "Direccion1", "Fecha2"));
 
+            //db.peliculaactor.Add(new PeliculaActor("Avengers","Avengers 2"));
+
+            //db.peliculaproductor.Add(new PeliculaProductor("Avengers", "Avengers 2"));
+
             InitializeComponent();
         }
 

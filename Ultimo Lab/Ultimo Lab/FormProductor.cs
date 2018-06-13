@@ -19,6 +19,7 @@ namespace Ultimo_Lab
             labelApellido.Text = pr.Apellido;
             labelFechaNacimiento.Text = pr.FechaNacimiento;
             labelBiografia.Text = pr.Biografia;
+
         }
     
         private void FormProductor_Load(object sender, EventArgs e)
