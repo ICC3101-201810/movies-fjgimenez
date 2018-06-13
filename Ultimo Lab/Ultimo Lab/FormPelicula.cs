@@ -17,6 +17,12 @@ namespace Ultimo_Lab
         {
             InitializeComponent();
             labelNombre.Text = p.Nombre;
+            labelDirector.Text = p.Director;
+            labelFechaEstreno.Text = p.FechaEstreno;
+            labelDescripcion.Text = p.Descripcion;
+            labelPresupuesto.Text = p.Presupuesto;
+            labelEstudio.Text = p.Estudio;
+
         }
     }
 }

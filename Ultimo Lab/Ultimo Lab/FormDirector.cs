@@ -16,6 +16,9 @@ namespace Ultimo_Lab
         {
             InitializeComponent();
             labelNombre.Text = d.Nombre;
+            labelApellido.Text = d.Apellido;
+            labelFechaNacimiento.Text = d.FechaNacimiento;
+            labelBiografia.Text = d.Biografia;
         }
 
         private void FormDirector_Load(object sender, EventArgs e)

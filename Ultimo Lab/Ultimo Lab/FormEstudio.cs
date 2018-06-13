@@ -16,6 +16,8 @@ namespace Ultimo_Lab
         {
             InitializeComponent();
             labelNombre.Text = e.Nombre;
+            labelDireccion.Text = e.Nombre;
+            labelFechaApertura.Text = e.Nombre;
         }
 
         private void FormEstudio_Load(object sender, EventArgs e)

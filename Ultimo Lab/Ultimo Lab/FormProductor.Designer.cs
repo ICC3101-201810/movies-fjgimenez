@@ -29,22 +29,55 @@
         private void InitializeComponent()
         {
             this.labelNombre = new System.Windows.Forms.Label();
+            this.labelBiografia = new System.Windows.Forms.Label();
+            this.labelFechaNacimiento = new System.Windows.Forms.Label();
+            this.labelApellido = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelNombre
             // 
             this.labelNombre.AutoSize = true;
-            this.labelNombre.Location = new System.Drawing.Point(526, 152);
+            this.labelNombre.Location = new System.Drawing.Point(325, 76);
             this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(51, 20);
+            this.labelNombre.Size = new System.Drawing.Size(65, 20);
             this.labelNombre.TabIndex = 0;
-            this.labelNombre.Text = "label1";
+            this.labelNombre.Text = "Nombre";
+            // 
+            // labelBiografia
+            // 
+            this.labelBiografia.AutoSize = true;
+            this.labelBiografia.Location = new System.Drawing.Point(325, 250);
+            this.labelBiografia.Name = "labelBiografia";
+            this.labelBiografia.Size = new System.Drawing.Size(72, 20);
+            this.labelBiografia.TabIndex = 1;
+            this.labelBiografia.Text = "Biografia";
+            // 
+            // labelFechaNacimiento
+            // 
+            this.labelFechaNacimiento.AutoSize = true;
+            this.labelFechaNacimiento.Location = new System.Drawing.Point(325, 195);
+            this.labelFechaNacimiento.Name = "labelFechaNacimiento";
+            this.labelFechaNacimiento.Size = new System.Drawing.Size(133, 20);
+            this.labelFechaNacimiento.TabIndex = 2;
+            this.labelFechaNacimiento.Text = "FechaNacimiento";
+            // 
+            // labelApellido
+            // 
+            this.labelApellido.AutoSize = true;
+            this.labelApellido.Location = new System.Drawing.Point(325, 138);
+            this.labelApellido.Name = "labelApellido";
+            this.labelApellido.Size = new System.Drawing.Size(65, 20);
+            this.labelApellido.TabIndex = 3;
+            this.labelApellido.Text = "Apellido";
             // 
             // FormProductor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelApellido);
+            this.Controls.Add(this.labelFechaNacimiento);
+            this.Controls.Add(this.labelBiografia);
             this.Controls.Add(this.labelNombre);
             this.Name = "FormProductor";
             this.Text = "FormProductor";
@@ -57,5 +90,8 @@
         #endregion
 
         private System.Windows.Forms.Label labelNombre;
+        private System.Windows.Forms.Label labelBiografia;
+        private System.Windows.Forms.Label labelFechaNacimiento;
+        private System.Windows.Forms.Label labelApellido;
     }
 }

@@ -17,20 +17,20 @@ namespace Ultimo_Lab
 
         public Form2()
         {
-            db.pelicula.Add(new Pelicula("asd", "asd", "asd", "asd", "asd", "asd"));
-            db.pelicula.Add(new Pelicula("asd", "asd", "asd", "asd", "asd", "asd"));
+            db.pelicula.Add(new Pelicula("Avengers", "Pepito", "1/6/2011", "muchas peleas", "1MM USD", "Marvel"));
+            db.pelicula.Add(new Pelicula("Avengers 2", "Juanito", "7/7/2014", "aun mas peleas", "1,2MM USD", "Marvel"));
 
-            db.actor.Add(new Actor("asd", "asd", "asd", "asd"));
-            db.actor.Add(new Actor("asd", "asd", "asd", "asd"));
+            db.actor.Add(new Actor("Samuel", "Jackson", "3/5/1972", "buen actor"));
+            db.actor.Add(new Actor("Scarlett", "Johanson", "7/11/1985", "simpatica"));
 
-            db.director.Add(new Director("asd", "asd", "asd", "asd"));
-            db.director.Add(new Director("asd", "asd", "asd", "asd"));
+            db.director.Add(new Director("Andres", "Riquelme", "9/9/1967", "bacan"));
+            db.director.Add(new Director("Pedro", "Hurtado", "3/12/1981", "super bacan"));
 
-            db.productor.Add(new Productor("asd", "asd", "asd", "asd"));
-            db.productor.Add(new Productor("asd", "asd", "asd", "asd"));
+            db.productor.Add(new Productor("Claudio", "Troncoso", "2/5/1977", "malo"));
+            db.productor.Add(new Productor("Maria", "Beltran", "24/8/1965", "muy malo"));
 
-            db.estudio.Add(new Estudio("asd", "asd", "asd"));
-            db.estudio.Add(new Estudio("asd", "asd", "asd"));
+            db.estudio.Add(new Estudio("Estudio1", "Direccion2", "Fecha1"));
+            db.estudio.Add(new Estudio("Estudio2", "Direccion1", "Fecha2"));
 
             InitializeComponent();
         }
