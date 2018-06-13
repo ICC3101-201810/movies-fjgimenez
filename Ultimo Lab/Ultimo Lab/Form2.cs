@@ -54,7 +54,6 @@ namespace Ultimo_Lab
                 label.Top = (i + 1) * 20 + 130;
                 label.Click += Label_Click_Pelicula;
                 this.Controls.Add(label);
-              
             }
         }
 
@@ -77,17 +76,16 @@ namespace Ultimo_Lab
                 //Position label on screen
                 label.Left = 10;
                 label.Top = (i + 1) * 20 + 130;
-                label.Click += Label_Click_Actores;
+                label.Click += Label_Click_Actor;
                 this.Controls.Add(label);
             }
         }
-        private void Label_Click_Actores(object sender, EventArgs e)
+        private void Label_Click_Actor(object sender, EventArgs e)
         {
             this.Refresh();
             int actores_id = Int32.Parse(((Label)sender).Text.Split('-')[0])-1;
-            Form actores_perfil = new FormPelicula(this.db.pelicula[actores_id]);
+            Form actores_perfil = new FormActor(this.db.actor[actores_id]);
             actores_perfil.Show();
-
         }
 
         private void directoresBtn_Click(object sender, EventArgs e)
@@ -96,14 +94,21 @@ namespace Ultimo_Lab
             {
                 //Create label
                 Label label = new Label();
-                label.Text = String.Format("{0}-{1}", i, this.db.director[i].Nombre);
+                label.Text = String.Format("{0}-{1}", i+1, this.db.director[i].Nombre);
                 //Position label on screen
                 label.Left = 10;
                 label.Top = (i + 1) * 20 + 130;
-                label.Click += Label_Click_Pelicula;
+                label.Click += Label_Click_Director;
                 this.Controls.Add(label);
 
             }
+        }
+        private void Label_Click_Director(object sender, EventArgs e)
+        {
+            this.Refresh();
+            int directores_id = Int32.Parse(((Label)sender).Text.Split('-')[0]) - 1;
+            Form directores_perfil = new FormDirector(this.db.director[directores_id]);
+            directores_perfil.Show();
         }
 
         private void productoresBtn_Click(object sender, EventArgs e)
@@ -112,14 +117,21 @@ namespace Ultimo_Lab
             {
                 //Create label
                 Label label = new Label();
-                label.Text = String.Format("{0}-{1}", i, this.db.productor[i].Nombre);
+                label.Text = String.Format("{0}-{1}", i+1, this.db.productor[i].Nombre);
                 //Position label on screen
                 label.Left = 10;
                 label.Top = (i + 1) * 20 + 130;
-                label.Click += Label_Click_Pelicula;
+                label.Click += Label_Click_Productor;
                 this.Controls.Add(label);
 
             }
+        }
+        private void Label_Click_Productor(object sender, EventArgs e)
+        {
+            this.Refresh();
+            int productores_id = Int32.Parse(((Label)sender).Text.Split('-')[0]) - 1;
+            Form productores_perfil = new FormProductor(this.db.productor[productores_id]);
+            productores_perfil.Show();
         }
 
         private void estudiosBtn_Click(object sender, EventArgs e)
@@ -128,14 +140,20 @@ namespace Ultimo_Lab
             {
                 //Create label
                 Label label = new Label();
-                label.Text = String.Format("{0}-{1}", i, this.db.estudio[i].Nombre);
+                label.Text = String.Format("{0}-{1}", i+1, this.db.estudio[i].Nombre);
                 //Position label on screen
                 label.Left = 10;
                 label.Top = (i + 1) * 20 + 130;
-                label.Click += Label_Click_Pelicula;
+                label.Click += Label_Click_Estudio;
                 this.Controls.Add(label);
-
             }
+        }
+        private void Label_Click_Estudio(object sender, EventArgs e)
+        {
+            this.Refresh();
+            int estudios_id = Int32.Parse(((Label)sender).Text.Split('-')[0]) - 1;
+            Form estudios_perfil = new FormEstudio(this.db.estudio[estudios_id]);
+            estudios_perfil.Show();
         }
     }
     }

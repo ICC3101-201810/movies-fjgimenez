@@ -66,11 +66,29 @@
     <Compile Include="FormActor.Designer.cs">
       <DependentUpon>FormActor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDirector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDirector.Designer.cs">
+      <DependentUpon>FormDirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEstudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstudio.Designer.cs">
+      <DependentUpon>FormEstudio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPelicula.Designer.cs">
       <DependentUpon>FormPelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductor.Designer.cs">
+      <DependentUpon>FormProductor.cs</DependentUpon>
     </Compile>
     <Compile Include="Pelicula.cs" />
     <Compile Include="PeliculaActor.cs" />
@@ -87,8 +105,17 @@
     <EmbeddedResource Include="FormActor.resx">
       <DependentUpon>FormActor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDirector.resx">
+      <DependentUpon>FormDirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstudio.resx">
+      <DependentUpon>FormEstudio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPelicula.resx">
       <DependentUpon>FormPelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductor.resx">
+      <DependentUpon>FormProductor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
