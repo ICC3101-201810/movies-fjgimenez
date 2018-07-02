@@ -2,12 +2,14 @@
 
 public class PeliculaProductor
 {
-    public object Pelicula { get; set; }
-    public object Productor { get; set; }
+    public string NombrePelicula { get; set; }
+    public string NombreProductor { get; set; }
+    public string ApellidoProductor { get; set; }
 
-    public PeliculaProductor(object Pelicula, object Productor)
+    public PeliculaProductor(string NombrePelicula, string NombreProductor, string ApellidoProductor)
 	{
-        this.Pelicula = Pelicula;
-        this.Productor = Productor;
-	}
+        this.NombrePelicula = NombrePelicula;
+        this.NombreProductor = NombreProductor;
+        this.ApellidoProductor = ApellidoProductor;
+    }
 }

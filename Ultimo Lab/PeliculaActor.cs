@@ -2,12 +2,14 @@
 
 public class PeliculaActor
 {
-    object Pelicula;
-    object Actor;
+    public string NombrePelicula;
+    public string NombreActor;
+    public string ApellidoActor;
 
-	public PeliculaActor(object Pelicula, object Actor)
+	public PeliculaActor(string NombrePelicula, string NombreActor, string ApellidoActor)
 	{
-        this.Pelicula = Pelicula;
-        this.Actor = Actor;
+        this.NombrePelicula = NombrePelicula;
+        this.NombreActor = NombreActor;
+        this.ApellidoActor = ApellidoActor;
 	}
 }

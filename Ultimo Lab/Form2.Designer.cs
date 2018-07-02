@@ -103,6 +103,7 @@
             this.searchBar.Name = "searchBar";
             this.searchBar.Size = new System.Drawing.Size(338, 26);
             this.searchBar.TabIndex = 6;
+            this.searchBar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchBar_KeyPress);
             // 
             // pictureBox1
             // 

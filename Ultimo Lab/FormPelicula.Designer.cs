@@ -34,12 +34,20 @@
             this.labelDescripcion = new System.Windows.Forms.Label();
             this.labelPresupuesto = new System.Windows.Forms.Label();
             this.labelEstudio = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelNombre
             // 
             this.labelNombre.AutoSize = true;
-            this.labelNombre.Location = new System.Drawing.Point(313, 67);
+            this.labelNombre.Location = new System.Drawing.Point(116, 48);
             this.labelNombre.Name = "labelNombre";
             this.labelNombre.Size = new System.Drawing.Size(65, 20);
             this.labelNombre.TabIndex = 0;
@@ -48,7 +56,7 @@
             // labelDirector
             // 
             this.labelDirector.AutoSize = true;
-            this.labelDirector.Location = new System.Drawing.Point(313, 117);
+            this.labelDirector.Location = new System.Drawing.Point(116, 98);
             this.labelDirector.Name = "labelDirector";
             this.labelDirector.Size = new System.Drawing.Size(65, 20);
             this.labelDirector.TabIndex = 1;
@@ -57,7 +65,7 @@
             // labelFechaEstreno
             // 
             this.labelFechaEstreno.AutoSize = true;
-            this.labelFechaEstreno.Location = new System.Drawing.Point(289, 168);
+            this.labelFechaEstreno.Location = new System.Drawing.Point(174, 148);
             this.labelFechaEstreno.Name = "labelFechaEstreno";
             this.labelFechaEstreno.Size = new System.Drawing.Size(110, 20);
             this.labelFechaEstreno.TabIndex = 2;
@@ -66,7 +74,7 @@
             // labelDescripcion
             // 
             this.labelDescripcion.AutoSize = true;
-            this.labelDescripcion.Location = new System.Drawing.Point(298, 221);
+            this.labelDescripcion.Location = new System.Drawing.Point(135, 201);
             this.labelDescripcion.Name = "labelDescripcion";
             this.labelDescripcion.Size = new System.Drawing.Size(92, 20);
             this.labelDescripcion.TabIndex = 3;
@@ -75,7 +83,7 @@
             // labelPresupuesto
             // 
             this.labelPresupuesto.AutoSize = true;
-            this.labelPresupuesto.Location = new System.Drawing.Point(298, 269);
+            this.labelPresupuesto.Location = new System.Drawing.Point(135, 249);
             this.labelPresupuesto.Name = "labelPresupuesto";
             this.labelPresupuesto.Size = new System.Drawing.Size(99, 20);
             this.labelPresupuesto.TabIndex = 4;
@@ -84,17 +92,97 @@
             // labelEstudio
             // 
             this.labelEstudio.AutoSize = true;
-            this.labelEstudio.Location = new System.Drawing.Point(298, 327);
+            this.labelEstudio.Location = new System.Drawing.Point(135, 307);
             this.labelEstudio.Name = "labelEstudio";
             this.labelEstudio.Size = new System.Drawing.Size(63, 20);
             this.labelEstudio.TabIndex = 5;
             this.labelEstudio.Text = "Estudio";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Nombre:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(28, 307);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Estudio:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(28, 249);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(103, 20);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Presupuesto:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(28, 201);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Descripción:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(28, 148);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(140, 20);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Fecha de Estreno:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(28, 98);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Director:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(352, 48);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 20);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Reparto:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(546, 48);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(99, 20);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Productores:";
             // 
             // FormPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(715, 428);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelEstudio);
             this.Controls.Add(this.labelPresupuesto);
             this.Controls.Add(this.labelDescripcion);
@@ -102,6 +190,7 @@
             this.Controls.Add(this.labelDirector);
             this.Controls.Add(this.labelNombre);
             this.Name = "FormPelicula";
+            this.Load += new System.EventHandler(this.FormPelicula_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,5 +204,13 @@
         private System.Windows.Forms.Label labelDescripcion;
         private System.Windows.Forms.Label labelPresupuesto;
         private System.Windows.Forms.Label labelEstudio;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
