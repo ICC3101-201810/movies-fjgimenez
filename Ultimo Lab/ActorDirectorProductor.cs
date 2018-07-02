@@ -2,22 +2,25 @@
 
 public class Actor: Persona
 {
-	public Actor()
+	public Actor(string Nombre, string Apellido, string FechaNacimiento, string Biografia) : base(Nombre, Apellido, FechaNacimiento, Biografia)
 	{
-	}
+
+    }
 }
 
 public class Director : Persona
 {
-    public Director()
+    public Director(string Nombre, string Apellido, string FechaNacimiento, string Biografia) : base(Nombre, Apellido, FechaNacimiento, Biografia)
     {
+
     }
 }
 
 public class Productor : Persona
 {
-    public Actor()
+    public Productor(string Nombre, string Apellido, string FechaNacimiento, string Biografia) : base(Nombre, Apellido, FechaNacimiento, Biografia)
     {
+
     }
 }
 

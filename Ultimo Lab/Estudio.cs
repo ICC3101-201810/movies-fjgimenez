@@ -2,9 +2,9 @@
 
 public class Estudio
 {
-    string Nombre;
-    string Direccion;
-    string FechaApertura;
+    public string Nombre { get; set; }
+    public string Direccion { get; set; }
+    public string FechaApertura { get; set; }
 
     public Estudio(string Nombre, string Direccion, string FechaApertura)
     {
